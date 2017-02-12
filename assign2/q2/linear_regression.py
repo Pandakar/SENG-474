@@ -11,6 +11,20 @@ This extension adds the following capabiltiies:
 '''
 import numpy, matplotlib, pandas
 import os
+def linear_regression():
+    x = numpy.matrix([[1,1],[1,2]])
+    y = numpy.matrix([[1.5], [2]])
+    w = numpy.array([[2], [2]])
+    kappa = 0.1
+    n = len(y)
+    # Need to transform the given Octave equation into Python equivalent
+    # The '  symbol refers to transpose
+    # The .* symbol refers to elementwise multiplication
+    #     x*w produces a dot product?
+    for t in range(1,11):
+        # w = w + kappa*(1/n)*sum((y-x*w).*x)'
+        # -> w = w + kappa*(1/n)*
+        print(t)
 # Input: file name corresponding to file we wish to read
 # Output: contents of file if it can be read, otherwise an error code
 def read_file(fname):
