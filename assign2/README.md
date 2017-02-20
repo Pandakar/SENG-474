@@ -33,5 +33,25 @@ After reading the contents of the input file, the perceptron algorithm will be a
 
 ## linear_regression.py
 
+NOTE: This is a partial implementation of linear regression. Not all components were able to be finished on time for the assignment deadline.
+
+This program takes in a single input parameter: the file to learn from. A sample file, `regdata.csv` is provided. To run linear_regression.py:
+
+`python linear_regression.py $inputfile`
+
+This program takes in the input data, scales it as required and then applies the linear regression algorithm to continually learn our w line. Currently this program also records the error computed at each iteration and provides a graph of it after computation.
 
 ## naive_bayes.py
+
+This program requires four input parameters:
+
+- a document or set of documents to train from
+- a list of labels corresponding to classifications for the training documents
+- a document or set of documents we wish to test this program against
+- a list of labels corresponding to classifications for the test documents
+
+When run on the command line, naive_bayes.py should be run as follows:
+
+`python naive_bayes.py $traindata $trainlabels $testdata $testlabels`
+
+Sample input is located in q4/data. 
