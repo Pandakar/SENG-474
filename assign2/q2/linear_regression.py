@@ -36,7 +36,7 @@ def linear_regression(traindata, classvals):
     # DEBUG - printing /99 since range(100) = [0, 99]
     print("w vector settled to {} after {}/99 loops".format(w, t))
     print("Error vector:", error)
-    return w
+    return w, error
 ################################################################################
 # read_file(fname)
 # Input: file name corresponding to file we wish to read
@@ -81,7 +81,7 @@ def compute_error(traindata, classvals, w):
         err += ((classvals[i] - float(x.dot(w.T)))**2)
         i += 1
     err = err/(2*n)
-    print(err)
+    #print(err)
     return err
 ################################################################################
 # plot_error()
@@ -104,7 +104,7 @@ def main():
         exit(0)
     fdata = read_file(sys.argv[1])
     scaledata = scale_attributes(fdata[0])
-    error = linear_regression(scaledata, fdata[1])
+    w, error = linear_regression(scaledata, fdata[1])
     plot_error(error)
 if __name__ == "__main__":
     main()
