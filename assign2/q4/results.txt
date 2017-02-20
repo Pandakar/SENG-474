@@ -1,0 +1,11 @@
+Vocabulary extracted, using 322 tuples for training.
+FINAL RESULTS
+Accuracy: 0.6831683168316832 (from 69/101)
+
+Used the following files for training:
+data/traindata.txt
+data/trainlabels.txt
+
+Used the following files for testing:
+data/testdata.txt
+data/testlabels.txt
