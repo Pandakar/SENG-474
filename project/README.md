@@ -1,3 +1,9 @@
-# Fake News Classification
+# Data Mining Course Project
+## Spring 2017
 
-This repository contains resources and code for a course project in the Data Mining course (SENG 474) at the University of Victoria for Spring 2017. Our motivation for this project is to build a fake news classification tool that utilizes machine learning for determining the reliability of news articles. The end goal is to have a tool that can take in news articles as input and output a classification for the news article along with the reasoning used for the classification.
+This repository contains code and resources used in a fake news classification project.
+This project was used for partial completion of SENG 474, a Data Mining course available through the University of Victoria.
+
+All files are provided as-is. Some filepaths are hardcoded.
+
+Instructions for running each program are contained in their respective folders where necessary.
